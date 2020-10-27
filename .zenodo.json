@@ -1,0 +1,29 @@
+{
+    "access_right": "open",
+    "title": "dictionaria/wersing: Wersing dictionary",
+    "description": "<p>Schapper, Antoinette. 2020. Wersing dictionary. Dictionaria 11. 1-1430 (Available online at <a href=\"https://dictionaria.clld.org/contributions/wersing\">https://dictionaria.clld.org/contributions/wersing</a>)</p>",
+    "communities": [
+        {
+            "identifier": "cldf-datasets"
+        },
+        {
+            "identifier": "clld"
+        },
+        {
+            "identifier": "dictionaria"
+        }
+    ],
+    "upload_type": "dataset",
+    "license": {
+        "id": "CC-BY-4.0"
+    },
+    "keywords": [
+        "cldf:Dictionary",
+        "linguistics"
+    ],
+    "creators": [
+        {
+            "name": "Antoinette Schapper"
+        }
+    ]
+}

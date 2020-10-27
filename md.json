@@ -1,0 +1,55 @@
+{
+    "authors": ["Antoinette Schapper"],
+    "language": {
+        "name": "Wersing",
+        "isocode": "kvw",
+        "glottocode": "wers1238"
+    },
+    "date_published": "2020",
+    "number": 11,
+    "properties": {
+        "entry_sep": "\\lx",
+        "marker_map": {
+            "pdv": "pd",
+            "xn": "xn_notused",
+            "lv": "metathesis"
+        },
+        "entry_map": {
+            "mb": "Inflection_Class",
+            "ph": "Pronunciation",
+            "bw": "Borrowed_Word",
+            "ee": "General_Comment",
+            "lt": "Literally",
+            "mr": "Morphology",
+            "pd": "Paradigm",
+            "va": "Variant"
+        },
+        "entry_custom_order": [
+            "Inflection_Class",
+            "Pronunciation",
+            "Variant",
+            "Paradigm",
+            "Morphology",
+            "Borrowed_Word",
+            "General_Comment",
+            "Grammar_Note",
+            "Literally"
+        ],
+        "sense_map": {
+            "ue": "Usage",
+            "metathesis": "Metathesised_Form",
+            "ng": "Grammar_Note"
+        },
+        "example_map": {},
+        "sources": {
+            "bw_bibref": "bw"
+        },
+        "labels": {
+        },
+        "custom_fields": ["Inflection Class", "Pronunciation"],
+        "link_regex": "(?<=\\|fv\\{)[^}]+(?=\\})",
+        "process_links_in_markers": [
+            "de", "ee", "ng", "np", "nt", "ue", "xe"
+        ]
+    }
+}
