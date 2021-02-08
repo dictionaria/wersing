@@ -5,11 +5,40 @@
             "@language": "en"
         }
     ],
+    "dc:bibliographicCitation": "Schapper, Antoinette. 2020. Wersing dictionary. Dictionaria 11. 1-1430 (Available online at https://dictionaria.clld.org/contributions/wersing)",
     "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#Dictionary",
     "dc:creator": "Antoinette Schapper",
     "dc:identifier": "https://dictionaria.clld.org/contributions/wersing",
+    "dc:license": "CC-BY 4.0",
     "dc:source": "sources.bib",
     "dc:title": "Wersing dictionary",
+    "dcat:accessURL": "git@github.com:dictionaria/wersing",
+    "prov:wasDerivedFrom": [
+        {
+            "rdf:type": "prov:Entity",
+            "dc:title": "Repository",
+            "rdf:about": "git@github.com:dictionaria/wersing",
+            "dc:created": "v1.0-4-gc7e88c8"
+        },
+        {
+            "rdf:type": "prov:Entity",
+            "dc:title": "Glottolog",
+            "rdf:about": "https://github.com/glottolog/glottolog",
+            "dc:created": "v4.3-treedb-fixes"
+        }
+    ],
+    "prov:wasGeneratedBy": [
+        {
+            "dc:title": "python",
+            "dc:description": "3.8.5"
+        },
+        {
+            "dc:title": "python-packages",
+            "dc:relation": "requirements.txt"
+        }
+    ],
+    "rdf:ID": "wersing",
+    "rdf:type": "http://www.w3.org/ns/dcat#Distribution",
     "dialect": {
         "commentPrefix": null
     },
@@ -69,11 +98,6 @@
                     },
                     {
                         "datatype": "string",
-                        "separator": " ; ",
-                        "name": "Media_IDs"
-                    },
-                    {
-                        "datatype": "string",
                         "name": "Morphology"
                     },
                     {
@@ -86,44 +110,34 @@
                     },
                     {
                         "datatype": "string",
-                        "name": "Variant"
-                    },
-                    {
-                        "datatype": "string",
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#source",
                         "separator": ";",
                         "name": "Source"
+                    },
+                    {
+                        "datatype": "string",
+                        "name": "Variant",
+                        "titles": "Variant Form(s)"
                     }
                 ],
                 "foreignKeys": [
-                    {
-                        "columnReference": [
-                            "Entry_IDs"
-                        ],
-                        "reference": {
-                            "resource": "entries.csv",
-                            "columnReference": [
-                                "ID"
-                            ]
-                        }
-                    },
-                    {
-                        "columnReference": [
-                            "Media_IDs"
-                        ],
-                        "reference": {
-                            "resource": "media.csv",
-                            "columnReference": [
-                                "ID"
-                            ]
-                        }
-                    },
                     {
                         "columnReference": [
                             "Language_ID"
                         ],
                         "reference": {
                             "resource": "languages.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
+                    },
+                    {
+                        "columnReference": [
+                            "Entry_IDs"
+                        ],
+                        "reference": {
+                            "resource": "entries.csv",
                             "columnReference": [
                                 "ID"
                             ]
@@ -169,16 +183,12 @@
                     },
                     {
                         "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#comment",
                         "name": "Comment"
                     },
                     {
                         "datatype": "string",
                         "name": "Grammar_Note"
-                    },
-                    {
-                        "datatype": "string",
-                        "separator": " ; ",
-                        "name": "Media_IDs"
                     },
                     {
                         "datatype": "string",
@@ -216,17 +226,6 @@
                         ],
                         "reference": {
                             "resource": "entries.csv",
-                            "columnReference": [
-                                "ID"
-                            ]
-                        }
-                    },
-                    {
-                        "columnReference": [
-                            "Media_IDs"
-                        ],
-                        "reference": {
-                            "resource": "media.csv",
                             "columnReference": [
                                 "ID"
                             ]
@@ -311,37 +310,10 @@
                     {
                         "datatype": "string",
                         "separator": " ; ",
-                        "name": "Media_IDs"
-                    },
-                    {
-                        "datatype": "string",
-                        "separator": " ; ",
                         "name": "Sense_IDs"
                     }
                 ],
                 "foreignKeys": [
-                    {
-                        "columnReference": [
-                            "Media_IDs"
-                        ],
-                        "reference": {
-                            "resource": "media.csv",
-                            "columnReference": [
-                                "ID"
-                            ]
-                        }
-                    },
-                    {
-                        "columnReference": [
-                            "Sense_IDs"
-                        ],
-                        "reference": {
-                            "resource": "senses.csv",
-                            "columnReference": [
-                                "ID"
-                            ]
-                        }
-                    },
                     {
                         "columnReference": [
                             "Language_ID"
@@ -363,6 +335,17 @@
                                 "ID"
                             ]
                         }
+                    },
+                    {
+                        "columnReference": [
+                            "Sense_IDs"
+                        ],
+                        "reference": {
+                            "resource": "senses.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
                     }
                 ],
                 "primaryKey": [
@@ -376,16 +359,46 @@
             "tableSchema": {
                 "columns": [
                     {
-                        "datatype": "string",
+                        "datatype": {
+                            "base": "string",
+                            "format": "[a-zA-Z0-9_\\-]+"
+                        },
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
                         "name": "ID"
                     },
                     {
                         "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#languageReference",
                         "name": "Language_ID"
                     },
                     {
                         "datatype": "string",
                         "name": "Filename"
+                    },
+                    {
+                        "datatype": "anyURI",
+                        "name": "URL"
+                    },
+                    {
+                        "datatype": "string",
+                        "name": "mimetype"
+                    },
+                    {
+                        "datatype": "integer",
+                        "name": "size"
+                    }
+                ],
+                "foreignKeys": [
+                    {
+                        "columnReference": [
+                            "Language_ID"
+                        ],
+                        "reference": {
+                            "resource": "languages.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
                     }
                 ],
                 "primaryKey": [
@@ -396,6 +409,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#LanguageTable",
+            "dc:extent": 1,
             "tableSchema": {
                 "columns": [
                     {
