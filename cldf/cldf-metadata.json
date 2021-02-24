@@ -18,7 +18,7 @@
             "rdf:type": "prov:Entity",
             "dc:title": "Repository",
             "rdf:about": "git@github.com:dictionaria/wersing",
-            "dc:created": "v1.0-4-gc7e88c8"
+            "dc:created": "v1.0-8-gba109cd"
         },
         {
             "rdf:type": "prov:Entity",
