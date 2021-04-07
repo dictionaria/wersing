@@ -9,7 +9,7 @@
     "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#Dictionary",
     "dc:creator": "Antoinette Schapper",
     "dc:identifier": "https://dictionaria.clld.org/contributions/wersing",
-    "dc:license": "CC-BY 4.0",
+    "dc:license": "https://creativecommons.org/licenses/by/4.0/",
     "dc:source": "sources.bib",
     "dc:title": "Wersing dictionary",
     "dcat:accessURL": "git@github.com:dictionaria/wersing",
@@ -18,7 +18,7 @@
             "rdf:type": "prov:Entity",
             "dc:title": "Repository",
             "rdf:about": "git@github.com:dictionaria/wersing",
-            "dc:created": "v1.0-8-gba109cd"
+            "dc:created": "v1.0-11-g3deb47a"
         },
         {
             "rdf:type": "prov:Entity",
