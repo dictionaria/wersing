@@ -13,8 +13,8 @@ property | value
 [dc:creator](http://purl.org/dc/terms/creator) | Antoinette Schapper
 [dc:identifier](http://purl.org/dc/terms/identifier) | https://dictionaria.clld.org/contributions/wersing
 [dc:license](http://purl.org/dc/terms/license) | https://creativecommons.org/licenses/by/4.0/
-[dcat:accessURL](http://www.w3.org/ns/dcat#accessURL) | git@github.com:dictionaria/wersing
-[prov:wasDerivedFrom](http://www.w3.org/ns/prov#wasDerivedFrom) | <ol><li><a href="git@github.com:dictionaria/wersing/tree/3deb47a">git@github.com:dictionaria/wersing v1.0-11-g3deb47a</a></li><li><a href="https://github.com/glottolog/glottolog/tree/v4.3-treedb-fixes">Glottolog v4.3-treedb-fixes</a></li></ol>
+[dcat:accessURL](http://www.w3.org/ns/dcat#accessURL) | https://github.com/dictionaria/wersing
+[prov:wasDerivedFrom](http://www.w3.org/ns/prov#wasDerivedFrom) | <ol><li><a href="https://github.com/dictionaria/wersing/tree/36a248f">dictionaria/wersing v1.0-13-g36a248f</a></li><li><a href="https://github.com/glottolog/glottolog/tree/v4.3">Glottolog v4.3</a></li></ol>
 [prov:wasGeneratedBy](http://www.w3.org/ns/prov#wasGeneratedBy) | <ol><li><strong>python</strong>: 3.8.5</li><li><strong>python-packages</strong>: <a href="./requirements.txt">requirements.txt</a></li></ol>
 [rdf:ID](http://www.w3.org/1999/02/22-rdf-syntax-ns#ID) | wersing
 [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | http://www.w3.org/ns/dcat#Distribution
