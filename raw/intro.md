@@ -17,9 +17,9 @@ settlements in Pureman on the south coast constitute the original Wersing
 settlement, with the settlement on the east coast having occurred later and from
 there further on to the north coast.
 
-<a href="https://cdstar.shh.mpg.de/bitstreams/EAEA0-E711-7436-26C3-0/Map3.jpg">
+<a href="https://cdstar.eva.mpg.de/bitstreams/EAEA0-E711-7436-26C3-0/Map3.jpg">
   <img
-    src="https://cdstar.shh.mpg.de/bitstreams/EAEA0-E711-7436-26C3-0/web.jpg"
+    src="https://cdstar.eva.mpg.de/bitstreams/EAEA0-E711-7436-26C3-0/web.jpg"
     alt="Map of Papuan languages of Alor and Pantar" />
 </a>
 
